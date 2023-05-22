@@ -114,16 +114,12 @@ body{
   }
 
   /* The styling of the span writing in the blog heading */
-  .blog-heading span{
-    color: #f33c3c;
-  }
 
   /* h3 styling */
   .blog-heading h3{
     font-size:2.4rem;
-    color: #2b2b2b;
+    color: #f33c3c;
     font-weight: 600;
-
   }
 
   /* the syling of the blog container */
@@ -131,7 +127,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0px;
+    margin: 10px 0px;
     flex-wrap: wrap;
   }
 
@@ -162,11 +158,6 @@ body{
     padding:30px;
     display: flex;
     flex-direction: column;
-  }
-
-  .blog-text span{
-    color: #f33c3c;
-    font-size: 0.9rem;
   }
 
   .blog-text .read-more{
@@ -312,4 +303,17 @@ body{
     position: relative; 
     top: 100px; 
     left: 120px; 
+  }
+
+.intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+  .selfie{
+    border-radius: 300px;
+    width: 300px;
+    height: 300px;
   }
