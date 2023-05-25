@@ -1,7 +1,7 @@
 .text{
-    font-family: 'Lato', sans-serif;
-    color: white;
-    font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 30px;
 }
 
 .projects-btn, .about-btn {
@@ -54,6 +54,7 @@
 
 .highlight{
     color: #f88379;
+    animation: fadeIn 3s;
 }
 
 .flex{
@@ -111,6 +112,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation: fadeIn 5s;
   }
 
   /* The styling of the span writing in the blog heading */
@@ -120,6 +122,7 @@ body{
     font-size:2.4rem;
     color: #f33c3c;
     font-weight: 600;
+    font-family: 'Lato', sans-serif;
   }
 
   /* the syling of the blog container */
@@ -195,6 +198,7 @@ body{
   h1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    animation: fadeIn 5s;
   }
   
   .robots {
@@ -305,7 +309,7 @@ body{
     left: 120px; 
   }
 
-.intro{
+.about-pic{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,3 +321,32 @@ body{
     width: 300px;
     height: 300px;
   }
+
+.title{
+  color: #FF4742;
+  font-family: 'Lato', sans-serif;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.intro{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.spiel{
+
+}
+
+.spiel-container{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
