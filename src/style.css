@@ -4,7 +4,7 @@
   font-size: 30px;
 }
 
-.projects-btn, .about-btn {
+.projects-btn, .about-btn, .resume{
   font-size: 10px;
   letter-spacing: 2px;    
   text-transform: uppercase;
@@ -24,7 +24,7 @@
   margin: 5px;
 }
 
-  .projects-btn:before, .about-btn:before{
+  .projects-btn:before, .about-btn:before, .resume:before{
     transition: 0.5s all ease;
     position: absolute;
     top: 0;
@@ -37,18 +37,18 @@
     z-index: -1;
   }
   
-  .projects-btn:hover, .projects-btn:focus, .about-btn:hover, .about-btn:focus {
+  .projects-btn:hover, .projects-btn:focus, .about-btn:hover, .about-btn:focus, .resume:hover, .resume:focus {
     color: white;
   }
   
-  .projects-btn:hover:before, .projects-btn:focus:before, .about-btn:hover:before, .about-btn:focus:before {
+  .projects-btn:hover:before, .projects-btn:focus:before, .about-btn:hover:before, .about-btn:focus:before, .resume:hover:before, .resume:focus:before {
     transition: 0.5s all ease;
     left: 0;
     right: 0;
     opacity: 1;
   }
   
-  .projects-btn:active, .about-btn:active {
+  .projects-btn:active, .about-btn:active, .resume:active {
     transform: scale(0.9);
   }
 
@@ -340,13 +340,69 @@ body{
   padding-top: 20px;
 }
 
-.spiel{
+h2{
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
 
+.spiel{
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 1.1em;
 }
 
 .spiel-container{
   width: 40%;
+  margin: auto;
+}
+
+.fa {
+  padding: 20px;
+  width: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.fa-facebook{
+background: #3B5998;
+color: white;
+border-radius: 100%;
+margin: 10px;
+}
+
+.fa-twitter{
+background: #1DA1F2;
+color: white;
+border-radius: 100%;
+margin: 10px;
+}
+
+.fa-linkedin{
+    background: #0072B1;
+    color: white;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.fa-github{
+    background: black;
+    color: white;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.socials{
+    text-align:center;
+    padding-top: 20px;
+}
+
+.resume{
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
