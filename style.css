@@ -24,29 +24,29 @@
   margin: 5px;
 }
 
-  .projects-btn:before, .about-btn:before, .resume:before{
-    transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    opacity: 0;
-    content: '';
-    background-color: #364967;
-    z-index: -1;
-  }
-  
-  .projects-btn:hover, .projects-btn:focus, .about-btn:hover, .about-btn:focus, .resume:hover, .resume:focus {
-    color: white;
-  }
-  
-  .projects-btn:hover:before, .projects-btn:focus:before, .about-btn:hover:before, .about-btn:focus:before, .resume:hover:before, .resume:focus:before {
-    transition: 0.5s all ease;
-    left: 0;
-    right: 0;
-    opacity: 1;
-  }
+.projects-btn:before, .about-btn:before, .resume:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #364967;
+  z-index: -1;
+}
+
+.projects-btn:hover, .projects-btn:focus, .about-btn:hover, .about-btn:focus, .resume:hover, .resume:focus {
+  color: white;
+}
+
+.projects-btn:hover:before, .projects-btn:focus:before, .about-btn:hover:before, .about-btn:focus:before, .resume:hover:before, .resume:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
   
   .projects-btn:active, .about-btn:active, .resume:active {
     transform: scale(0.9);
@@ -90,224 +90,227 @@ body{
     }
   }
 
-  #blog{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    font-family: 'Poppins', sans-serif;
-    color:#0f0f0f;
-  }
+#blog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  font-family: 'Poppins', sans-serif;
+  color:#0f0f0f;
+}
 
-  /* removing the underscore in the a links */
-  a {
-    text-decoration: none;
-  }
+/* removing the underscore in the a links */
+a {
+  text-decoration: none;
+}
 
-  /* styling of the blog heading */
-  .blog-heading{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    animation: fadeIn 5s;
-  }
+/* styling of the blog heading */
+.blog-heading{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 5s;
+}
 
-  /* The styling of the span writing in the blog heading */
+/* The styling of the span writing in the blog heading */
 
-  /* h3 styling */
-  .blog-heading h3{
-    font-size:2.4rem;
-    color: #f33c3c;
-    font-weight: 600;
-    font-family: 'Lato', sans-serif;
-  }
+/* h3 styling */
+.blog-heading h3{
+  font-size:2.4rem;
+  color: #f33c3c;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+}
 
-  /* the syling of the blog container */
-  .blog-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0px;
-    flex-wrap: wrap;
-  }
+/* the syling of the blog container */
+.blog-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
 
-  /* the syling of the box around the blog posts */
-  .blog-box{
-    width: 350px;
-    background-color: #ffffff;
-    border: 1px solid #ececec;
-    margin: 20px;
-  }
+/* the syling of the box around the blog posts */
+.blog-box{
+  width: 350px;
+  background-color: #ffffff;
+  margin: 20px;
+  height: 350px;
+}
 
-  /* How the image fits in the box */
-  .blog-img{
-    width: 100%;
-    height: auto;
-  }
+/* How the image fits in the box */
+.blog-img{
+  width: 100%;
+  height: 350px;
+}
 
-  .blog-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.blog-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 
-  }
+}
 
-  /* The text styling */
-  .blog-text{
-    padding:30px;
-    display: flex;
-    flex-direction: column;
-  }
+/* The text styling */
+.blog-text{
 
-  .blog-text .read-more{
-    font-size: 1.3rem;
-    font-weight: 500;
-    color:#272727;
-  }
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  height: 200px;
+}
 
-  .blog-text .read-more:hover{
-    color: #f33c3c;
-    transition: all ease 0.3s;
-  }
+.blog-text .read-more{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color:#272727;
+}
 
-  .blog-text p{
-    color: #9b9b9b;
-    font-size: 0.9rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 20px 0px;
-  }
+.blog-text .read-more:hover{
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
 
-  .blog-text a{
-    color: #0f0f0f;
-  }
+.blog-text p{
+  color: #9b9b9b;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
 
-  .blog-text a:hover{
-    color: #f33c3c;
-    transition: all ease 0.3s;
-    cursor: pointer;
-  }
+.blog-text a{
+  color: #0f0f0f;
+}
 
-  h1 {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    animation: fadeIn 5s;
-  }
+.blog-text a:hover{
+  color: #f33c3c;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  animation: fadeIn 5s;
+}
+
+.robots {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+    background-color: purple;
+}
+
+.head { 
+  width: 200px; 
+  margin: 0 auto; 
+  height: 150px; 
+  border-radius: 200px 200px 0 0; 
+  margin-bottom: 10px;
+} 
   
-  .robots {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .head, 
-  .left_arm, 
-  .torso, 
-  .right_arm, 
-  .left_leg, 
-  .right_leg {
-     background-color: purple;
-  }
-  
-  .head { 
-    width: 200px; 
-    margin: 0 auto; 
-    height: 150px; 
-    border-radius: 200px 200px 0 0; 
-    margin-bottom: 10px;
-  } 
-  
-  .eyes {
-    display: flex;
-  }
-  
-  .head:hover {
-    width: 300px;
-      transition: 1s ease-in-out;
-  }
-  
-  .upper_body { 
-    width: 300px; 
-    height: 150px;
-    display: flex;
-  } 
-  
-  .left_arm, .right_arm { 
-    width: 40px; 
-    height: 125px;
-    border-radius: 100px; 
-  } 
-  
-  .left_arm { 
-    margin-right: 10px; 
-  } 
-  
-  .right_arm { 
-    margin-left: 10px; 
-  } 
-  
-  .torso { 
-    width: 200px; 
-    height: 200px;
-    border-radius: 0 0 50px 50px; 
-  } 
-  
-  .lower_body { 
-    width: 200px; 
-    height: 200px;
-    /* This is another useful property. Hmm what do you think it does?*/
-    display: flex;
-    margin: 0 auto;
-  
-  } 
-  
-  .left_leg, .right_leg { 
-    width: 40px; 
-    height: 120px;
-    border-radius: 0 0 100px 100px;
-  } 
-  
-  .left_leg { 
-    margin-left: 45px;
-  } 
-  
-  .left_leg:hover {
-    -webkit-transform: rotate(20deg);
-      -moz-transform: rotate(20deg);
-      -o-transform: rotate(20deg);
-      -ms-transform: rotate(20deg);
-      transform: rotate(20deg);
-  }
-  
-  .right_leg { 
-    margin-left: 30px;
-  }
-  
-  .left_eye, .right_eye { 
-    width: 20px; 
-    height: 20px; 
-    border-radius: 15px; 
-    background-color: white;  
-  } 
-  
-  .left_eye { 
-    position: relative; 
-    top: 100px; 
-    left: 40px; 
-  } 
-  
-  .right_eye { 
-    position: relative; 
-    top: 100px; 
-    left: 120px; 
-  }
+.eyes {
+  display: flex;
+}
+
+.head:hover {
+  width: 300px;
+    transition: 1s ease-in-out;
+}
+
+.upper_body { 
+  width: 300px; 
+  height: 150px;
+  display: flex;
+} 
+
+.left_arm, .right_arm { 
+  width: 40px; 
+  height: 125px;
+  border-radius: 100px; 
+} 
+
+.left_arm { 
+  margin-right: 10px; 
+} 
+
+.right_arm { 
+  margin-left: 10px; 
+} 
+
+.torso { 
+  width: 200px; 
+  height: 200px;
+  border-radius: 0 0 50px 50px; 
+} 
+
+.lower_body { 
+  width: 200px; 
+  height: 200px;
+  /* This is another useful property. Hmm what do you think it does?*/
+  display: flex;
+  margin: 0 auto;
+
+} 
+
+.left_leg, .right_leg { 
+  width: 40px; 
+  height: 120px;
+  border-radius: 0 0 100px 100px;
+} 
+
+.left_leg { 
+  margin-left: 45px;
+} 
+
+.left_leg:hover {
+  -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg { 
+  margin-left: 30px;
+}
+
+.left_eye, .right_eye { 
+  width: 20px; 
+  height: 20px; 
+  border-radius: 15px; 
+  background-color: white;  
+} 
+
+.left_eye { 
+  position: relative; 
+  top: 100px; 
+  left: 40px; 
+} 
+
+.right_eye { 
+  position: relative; 
+  top: 100px; 
+  left: 120px; 
+}
 
 .about-pic{
   display: flex;
@@ -316,11 +319,11 @@ body{
 
 }
 
-  .selfie{
-    border-radius: 300px;
-    width: 300px;
-    height: 300px;
-  }
+.selfie{
+  border-radius: 300px;
+  width: 300px;
+  height: 300px;
+}
 
 .title{
   color: #FF4742;
